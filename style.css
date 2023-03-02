@@ -1,0 +1,514 @@
+
+.home-section{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(90deg,rgba(128, 128, 128, 0.663) 70%,white 30%)
+}
+#navbar{
+   background:linear-gradient(90deg,rgba(128, 128, 128, 0.663) 70%,white 30%)
+}
+#logo{
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color:black;
+}
+.navbar-nav{
+    margin-left: 50px;
+    margin-top: 6px;
+}
+.nav-item .nav-link{
+    margin-left: 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px white;
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+  color: whitesmoke;
+}
+#btncv{
+    background: transparent;
+    border: 2px solid black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+@media screen and (max-width:999px) {
+    #btncv{
+        border: 2px solid rgba(128, 128, 128, 0.663);
+        color: rgba(128, 128, 128, 0.663);
+        margin-left: 50px;
+    }
+}
+
+
+.home{
+    width: 100%;
+    height: 91.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home.img{
+    flex: 1 1 400px;
+}
+.home .img img{
+    width: 60%;
+    margin-left: 30px;
+    box-shadow: 30px 1px 30px black;
+}
+.home .content{
+    flex:1 1 400px;
+    margin-left: 50px;
+    }
+.home .content h5{
+    color:white;
+    letter-spacing: 3px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.home .content h3{
+    font-size: 50px;
+    color: white;
+}
+.home .content h3 span{
+    color: black;
+    font-weight: bold;
+}
+.changecontent::before{
+    content: " ";
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+    animation: changetext 20s infinite linear;
+}
+@keyframes changetext{
+    50%{content:"Python Django Full Stack Web developer";}
+    10%{content:"Web developer";}
+    10%{content:"Developer";}
+    10%{content:"UL/UX Developer";}
+
+}
+.home .content p{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#btn1{
+    width: 150px;
+    height: 30px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid black;
+    background: transparent;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn1:hover{
+    background-color:black;
+    color: white;
+}
+@media screen and(max-width:844px){
+    .home-section{
+        height: 146vh;
+        background: black;
+    }
+    .home .content{
+        margin-top: 50px;
+    }
+    #navbar{
+        background: black;
+    }
+}
+
+@media screen and(max-width:650px){
+    .home-section{
+        height: 130vh;
+        }
+    .img img{
+        margin-top: 30px;
+    }
+}
+@media screen and(max-width:360px){
+    .home-section{
+    height: 11vh;
+                }
+}
+
+
+/* about */
+
+
+#about{
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(128, 128, 128, 0.663);
+    display: flex;
+    align-items: center;
+}
+#about .card img{
+    background-color: white;
+    border: 30px solid white;
+    box-shadow: 8px 1px 8px black;
+}
+#about h3{
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid #ff990f;
+    width: 150px;
+    margin-top: 10px;
+    
+}
+#about h5{
+    color: black;
+    font-weight: bold;
+}
+#about p{
+    color: white;
+    font-size: 15px;
+}
+#about h2{
+    color: black;
+    font-size: 17px;
+}
+#about h2 span{
+    font-size: 15px;
+    color: black;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+#btncv2{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    background-color: rgba(128, 128, 128, 0.663);
+    border-color: black;
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btncv2:hover{
+    background-color: black;
+
+}
+@media screen and (max-width:987px){
+    #about p{
+        font-size: 10px;
+    }
+    #about p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:767px){
+    #about {
+        height: 150vh;
+    }
+}
+@media screen and (max-width:500px){
+    #about {
+        height: 120vh;
+    }
+}
+
+/*service*/
+
+#services{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.663);
+}
+#services h1{
+    width: 130px;
+    padding-top: 130px;
+    color: black;
+    border-bottom: 2px solid #ff9900;
+}
+#services .card{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#services .card:hover{
+    background-color: pink;
+}
+#services p{
+    color: white;
+}
+#services .card i{
+    font-size: 42px;
+    margin-left: 10px;
+}
+#services .card h2{
+    font-size: 22px;
+    margin-left: 10px;
+}
+@media screen and (max-width:767px) {
+    #services{
+        height: 200vh;
+    }
+}
+/*resume*/
+
+.hr{
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    
+}
+
+#resume{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.663);;
+}
+#resume h5{
+    color: black;
+    padding-top: 50px;
+
+}
+#resume h1{
+    color: black;
+
+}
+#resume h3 i{
+    color: black;
+    margin: 0;
+       
+}
+#resume h3{
+    color: black;
+    border-bottom: 2px solid orange;
+    width: 170px;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+#resume h2{
+    color: black;
+    margin-top: 20px;
+    font-size: 26px;
+    margin-left: 150px;
+}
+#resume p{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 150px;
+
+}
+#resume i{
+    color: rgba(0, 0, 0, 0.588);
+    margin-left: 150px;
+}
+@media screen and (max-width:767px){
+    #resume{
+        height: 150vh;
+    }
+    
+}
+
+
+/*portfolio*/
+
+#portfolio{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.663);
+}
+#portfolio h1{
+    color: black;
+    padding-top: 30px;
+}
+#portfolio p{
+    color: white;
+}
+#portfolio .card{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#portfolio .card:hover{
+    transform: translateY(-10px);
+}
+@media screen and (max-width:770px) {
+    #portfolio{
+        height: 320vh;
+    }
+}
+@media screen and (max-width:460px) {
+    #portfolio{
+        height: 260vh;
+    }
+}
+
+/* contact */
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.663);
+}
+#contact h1{
+    color: black;
+    border-bottom: 2px solid orange;
+    width: 210px;
+    padding-top: 100px;
+}
+#contact p{
+    color: white;
+}
+#contact input{
+    width: 420px;
+    margin-top: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+
+}
+#contact::placeholder{
+    color: white;
+
+}
+#contact textarea{
+    background: transparent;
+    border: 2px solid white;
+    margin-top: 20px;
+    color: white;
+}
+#btncontact{
+    width: 420px;
+    height: 38px;
+    letter-spacing: 3px;
+    background: transparent;
+    color: black;
+    border: 2px solid white;
+    margin-top: 30px;
+}
+#contact i{
+   color: black;
+   margin-top:30px;
+   margin-left: 7px;
+   font-size: 20px;
+   letter-spacing: 2px;
+
+}
+#contact span{
+    background: transparent;
+    border: none;
+    color: white;
+
+}
+.social-links i{
+    padding-top: 20px;
+    margin-left:10px;
+    font-size: 20px;
+
+}
+@media screen and(max-width:995px){
+    #contact input{
+        width: 350px;
+    }
+    #contact textarea{
+        width: 350px;
+
+    }
+    #contact #btncontact{
+        width: 350px;
+    }
+}
+
+
+@media screen and(max-width:476px){
+    #contact input{
+        width: 300px;
+    }
+    #contact textarea{
+        width: 300px;
+
+    }
+    #contact #btncontact{
+        width: 300px;
+    }
+
+}
+
+@media screen and(max-width:320px){
+    #contact input{
+        width: 180px;
+    }
+    #contact textarea{
+        width: 180px;
+
+    }
+    #contact #btncontact{
+        width: 180px;
+    }
+
+}
+@media screen and(max-width:767px){
+    #contact{
+        height: 150vh;
+    }
+}
+
+/*footer*/
+
+#footer {
+    width: 100%;
+    height: 37.5vh;
+    background-color: white;
+}
+#footer h1{
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    padding-top: 30px;
+    margin-left: 650px;
+}
+#footer p{
+    color: grey;
+    text-shadow: 0px 1px 1px;
+}
+.icons i{
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+    margin-left: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.copyright{
+    color: grey;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px;
+}
+
+
+
+
+html{
+   scroll-behavior:smooth;
+}
+.arrow{
+    position: fixed;
+    border-radius: 50px;
+    color: black;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    line-height: 50px;
+}
+.arrow:hover{
+    color: grey;
+}
